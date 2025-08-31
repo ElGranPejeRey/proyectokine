@@ -196,39 +196,70 @@ body {
 
 /* galria de imagenes */
 
-.parent {
-display: grid;
-grid-template-columns: repeat(8, 1fr);
-grid-template-rows: repeat(8, 1fr);
-grid-column-gap: 8px;
-grid-row-gap: 8px;
+.contenedor-grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "img1 img2 img3 img3"
+    "img1 img2 img3 img3"
+    "img4 img4 img3 img3"
+    "img4 img4 img3 img3"
+    "img6 img6 img5 img5"
+    "img6 img6 img5 img5";
+    gap: 5px;
 }
 
-.div1 { grid-area: 1 / 1 / 5 / 5; }
-
-.div1 img{
+.img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.div2 { grid-area: 5 / 1 / 9 / 4; }
-
-.div2 img{
-    width: 100%;
+.img-1{
+    grid-area: img1;
 }
 
-.div3 { grid-area: 5 / 4 / 9 / 7; }
-
-.div3 img{
-    width: 100%;
-}
-.div4 { grid-area: 1 / 5 / 5 / 9; }
-
-.div4 img{
-    width: 100%;
+.img-2{
+    grid-area: img2;
 }
 
-.div5 { grid-area: 1 / 7 / 9 / 9; }
+.img-3{
+    grid-area: img3;
+}
 
-.div5 img{
+.img-4{
+    grid-area: img4;
+}
+
+.img-5{
+    grid-area: img5;
+}
+
+.img-6{
+    grid-area: img6;
+}
+.img:hover{
+    filter: grayscale(50%);
+    cursor: pointer;
+    transition: filter .5s;
+}
+
+.contaier-img{
+    position: fixed;
+    height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-show{
+    height: 80%;
+    display: block;
+    object-fit: cover;
 }
