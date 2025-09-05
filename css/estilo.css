@@ -97,6 +97,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 180px;
+    background-color: #0d6efd;
 }
 
 /* mision */
