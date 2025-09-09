@@ -6,7 +6,9 @@ body {
 
 /* menu */
 
-
+h1{
+    background-color: blue;
+}
 .nav-item .nav-link {
     width: 100%;
     height: 40px;
