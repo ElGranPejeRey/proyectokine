@@ -7,8 +7,8 @@ body {
 /* menu */
 
 h1{
-    font-style: italic;
-    background-color: blue;
+    font-family: "Roboto", sans-serif;
+    
 }
 .nav-item .nav-link {
     width: 100%;
@@ -31,7 +31,7 @@ h1{
 .btn-login {
     width: 100px;
 }
-
+/*SELECTOR DE CLASE*/
 .cont-btn-login {
     display: flex;
     justify-content: center;
@@ -266,3 +266,27 @@ h1{
     display: block;
     object-fit: cover;
 }
+
+h4{
+    font-size: 32px;
+    font-weight: bold;
+    color: #0d6efd;
+    display: flex;
+    justify-content: center;
+}
+            
+.redes-sociales{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/*Para usar Estilos opcionales para iconos de redes sociales*/
+       .bi{
+        font-size: 32px;
+        color: blue;
+        }
+        .bi:hover{
+            color:black
+        }
+
