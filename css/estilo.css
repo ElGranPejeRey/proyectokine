@@ -99,6 +99,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 180px;
+    background-color: #0d6efd;
 }
 
 /* mision */
@@ -120,6 +121,7 @@ body {
     border-radius: 1rem;
     box-shadow: 0 8px 24px rgb(149 157 165 / 0.2);
     transition: transform 0.3s ease;
+    background-color:lightsteelblue;
 }
 
 .mission-vision-values .card:hover {
@@ -264,4 +266,19 @@ body {
     height: 80%;
     display: block;
     object-fit: cover;
+}
+
+.bi{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20%;
+}
+
+.card-title{
+    margin-top: 30px;
+    background-color: #fff;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
